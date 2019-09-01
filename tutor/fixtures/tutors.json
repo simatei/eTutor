@@ -1,0 +1,34 @@
+[
+    {
+        "model" : "tutor.TutorProfile",
+        "pk" : 1,
+        "fields" : {
+            "first_name" : "John",
+            "last_name" : "Doe",
+            "email": "johndoe@etutor.co.ke",
+            "specialization" : "Anonymity 102",
+            "created_on": "2019-01-01 00:00:00"
+        }
+
+        
+    },
+    
+    {
+        
+        "model" : "tutor.TutorProfile",
+        "pk" : 2,
+        "fields" : {
+            "first_name" : "Jane",
+            "last_name" : "Doe",
+            "email": "janedoe@etutor.co.ke",
+            "specialization" : "Anonymity 101",
+            "created_on": "2019-01-01 00:00:00"
+        }
+
+        
+
+    }
+
+
+
+]
