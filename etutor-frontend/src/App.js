@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Tutors from './BackendData/Tutors'
-import Tutor from './components/Tutor'
+import CustomLayout from './components/Layout'
+import 'antd/dist/antd.css'
 
 class App extends React.Component{
  render(){
    return(
      <div>
-     <Tutors/>
+     <CustomLayout/>
      </div>
    )
  }

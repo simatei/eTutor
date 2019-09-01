@@ -7,7 +7,7 @@ function Tutor(props){
             <p> lastName={props.lastName}</p>
             <p> Email={props.email}</p>
             <p> specialization={props.specialization}</p>
-            <p> createdOn={props.createdOn}</p>
+            <p> created on={props.createdOn}</p>
         </div>
     )
 }
