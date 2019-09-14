@@ -35,3 +35,22 @@ class StudentProfile(models.Model):
 
     def __str__(self):
         return self.email
+
+
+# Projeccts model
+class Projects(models.Model):
+    student = models.ForeignKey(StudentProfile, on_delete=models.CASCADE)
+    supervisor = models.ForeignKey(TutorProfile, on_delete=models.CASCADE)
+    title = models.CharField(max_length=50)
+    GRADECHOICES = [
+        ('A', 'Very Good'),
+        ('B', 'Good'),
+        ('C', 'Average'),
+        ('D', 'Pass'),
+        ('F', 'Fail'),
+        ('IC', 'Incomplete'),
+    ]
+    project_grade = models.CharField(max_length=30, choices=GRADECHOICES)
+
+    def __str__(self):
+        return self.title
