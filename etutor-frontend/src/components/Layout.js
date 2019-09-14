@@ -1,6 +1,7 @@
 import React from 'react'
-import { Layout, Menu, Breadcrumb, Icon, Carousel } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon, Row } from 'antd';
 import Tutor from './Tutor'
+import WrappedNormalLoginForm from './LoginForm'
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -65,7 +66,11 @@ const CustomLayout = (props) => {
               </Menu>
             </Sider>
             <Content style={{ padding: '0 24px', minHeight: 480 }}>
+            <Row type="flex" justify="space-around" align="middle">
             <h1>Welcome to eTutor</h1>
+
+            </Row>
+            <WrappedNormalLoginForm/>
             </Content>
           </Layout>
         </Content>
